@@ -30,7 +30,8 @@ print(' [*] Waiting for logs. Press CTRL+C to exit.')
 
 
 def callback(ch, method, properties, body):
-    print(str(body))
+    msg = body.decode("utf-8")
+    print(msg)
 
 
 channel.basic_consume(
