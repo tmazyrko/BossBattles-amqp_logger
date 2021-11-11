@@ -1,3 +1,3 @@
-To use:
+To run in background:
 
-`python3 log_subscriber.py > output_file.log`
+`nohup python3 log_subscriber.py > [output file] &`
